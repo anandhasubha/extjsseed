@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child,
+ol li > :first-child,
+ul li ul:first-of-type,
+ol li ol:first-of-type,
+ul li ol:first-of-type,
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<!-- base href="file:///C:/Users/109870/Desktop/" -->
+</head>
+<body>
+<ul>
+<li><strong>File: </strong> ReadMe.html</li>
+<li><strong>Author:</strong> Advanced Javascript Solutions COE </li>
+<li><strong>Reviewer:</strong>Advanced Javascript Solutions COE </li>
+<li><strong>Copyrights:</strong> Cognizant 2014</li>
+</ul>
+<h1>Project Description</h1>
+<p>ExtJS Seed project is an application skeleton that can be used as a starting point for more feature-rich  enterprise/commercial single page web application.Project is structured  by adopting module pattern using RequireJS in which similar functionalities are organized into the same directory. This approach separates controllers, services and partials into their own modules.Project contains bunch of ExtJS libraries,third party libraries,HTML,CSS and re-usable assets to quickly jump start your Ext web application development. ExtJS seed project talks to backend REST service hosted in www.mongolab.com.</p>
+<h1>Technology Stack</h1>
+<p><strong>UI widgets and Style        :</strong>  HTML4 , HTML5, CSS2,CSS3 and JavaScript </p>
+<p><strong>UI Template                :</strong>   ExtJS XTemplate Directives </p>
+<p><strong>AMD                         :</strong>  RequireJS 2.1.10</p>
+<p><strong>RWD                         :</strong>  Twitter Bootstrap 3.1.0 and Custom Media queries</p>
+<p><strong>Client Validation           :</strong>  ExtJS built-in directives </p>
+<p><strong>Javascript MVC framework    :</strong>  ExtJS 1.2</p>
+<p><strong>Javascript Patterns         :</strong>  Modularity ,Facade and Singleton</p>
+<p><strong>Event Handling,DOM manipulations,Ajax and Service Interface  :</strong> ExtJs Event Observer, ExtJS Controller, Directives jQuery v1.11.0
+ </p>
+<h1>About SPA</h1>
+<p>From http://en.wikipedia.org/wiki/Single-page_application - In an
+SPA, either all necessary code - HTML, JavaScript, and CSS are retrieved with a single page load, or the appropriate resources are
+dynamically loaded and added to the page as necessary, usually in
+response to user actions. The page does not reload at any point in the
+process, nor does control transfer to another page, although modern web
+technologies (such as those included in HTML5) can provide the
+perception and navigability of separate logical pages in the
+application. Interaction with the single page application often involves
+ dynamic communication with the web server behind the scenes.
+In this implementation, we have a SPA consuming RESTful services using
+JSON as data exchange format.</p>
+<h1>WHY SPA</h1>
+<ul>
+<li>Less HTTP calls to Server.</li>
+<li>Fast and responsive non refreshing page. Can redraw any part of the
+UI without requiring a server roundtrip to retrieve HTML.&nbsp;</li>
+<li>Thick client -Thin server architecture, less load on the server. Enables superior performance even at low network bandwidth.</li>
+<li>Client invokes backend service only for non-HTML JSON data, thereby minimizes the size of the response data.</li>
+<li>Easy to enable offline browsing capabilities.</li>
+<li>Data requests should generally be faster and the server will do slightly less processing.</li>
+<li>Client and backend services  can be developed and  exist independently regardless of where they are hosted and built.</li>
+<li>Due to the separation of concerns, testing now becomes easier and more controlled.</li>
+<li>Supports different devices - desktop,tablet,mobile,TV ,Google glass etc. </li>
+</ul>
+<h1>SPA ExtJS Logical Architecture</h1>
+<p><img src="ExtJSLogicalArchitecture.jpg" alt="Logical Architecture"></p> <br>
+<h1>ExtJS Architecture</h1>
+<p><img src="ExtJSArchitecture.jpg" alt="ExtJS Architecture"> </p><br>
+<h1>SPA Physical Architecture</h1>
+<p><img src="PhysicalArchitecture.jpg" alt="SPA Physical Architecture"></p>
+
+<h1>Key Layers/Components</h1>
+<ul>
+<li><strong>Application : </strong> : Application entry point, organize, initialize, inject dependencies  and coordinates the various pieces of application.Act as container for all Ext managed objects or modules. </li>
+<li><strong>View(Partials) :</strong> Run time DOM, renders dynamic page and HTML controls with scope data/state. Dispatch user events(actions) to controller. Also responds (binds) to change in model state by updating the UI page.</li>
+<li><strong>Templates : </strong>Static HTML page with Ext Directives & data binding expression to build reusable HTML UI.</li>
+
+<li><strong>Store/Model : </strong>Store class encapsulates a client side cache of Model objects. Stores load data via a Proxy, and also provide functions for sorting, filtering and querying the model instances contained within it.</li>
+
+<li><strong>Controller :</strong> Defines and handles user events(actions). Invoke appropriate services to get application data from backend service and updates View state via scope.</li>
+<li><strong>Service : </strong>Makes REST calls, represent presentation logic and fetch application data from REST service. Enable Facade pattern with the single responsibility of interacting with the external Web service.
+View can have only one View Model whereas View Model can have one or many models/collections attached to it. </li>
+<li><strong>RESTExtJS : </strong>It is an ExtJS service that simplifies REST API methods - GET,CREATE DELETE, and UPDATE requests, entity relationships, object graph navigation,  with a minimum of client code. Communicates with  back-end service using JSON data over REST.</li>
+<li><strong>Directives : </strong>Directives in ExtJS are used to make custom HTML elements and simplify DOM manipulation. They can modify the behavior of new and existing DOM elements, by adding custom functionality.ExtJS comes with its own set of built-in directives, as well as the ability to add your own ones.</li>
+<li><strong>Layouts : </strong>Top level UI component to display nested views/partials within a page.</li>
+<li><strong>Config : </strong>Container to define all the constants ,configurations and properties related  parameters as key/value pair. </li>
+<li><strong>Utils  : </strong>Defines helper functions and utilities for implementing common behavior that can be reused across application modules.</li>
+<li><strong>Bootstrap : </strong>: kick starts Ext application module. All  initializing or start up functions that needs to be executed prior to application startup have to be defined here.
+</li>
+<li><strong>Require.js : </strong>AMD (Asynchronous Module Definition) script loader that asynchronously loads your JavaScript to improve page load performance, organize JavaScript into self contained modules. Each JavaScript file represents a module. Also does dependency management by injecting dependent modules into current module. </li>
+</ul>
+
+<h1>Key Design Decisions</h1>
+<ul>
+<li>Favor loose coupling and tight cohesion.</li>
+<li>Favor good separation of concerns.</li>
+<li>Favor modularization and reusability.</li>
+<li>Favor SOLID principles.</li>
+<li>Favour flexibiltiy to pick and choose stacks.</li>
+<li>Favour Portability across all devices and platforms.</li>
+<li>Favor responsive web design.</li>
+<li>Favour Compatability with all major desktop browsers and mobile browsers. </li>
+<li>Favor clean code and website best practices.</li>
+</ul>
+<h1>Best Practices</h1>
+<ul>
+<li>Async and parallel loading  of  application files - Javascript,CSS and HTML files</li>
+<li>JavaScript Syntax Validation and Code Quality Report</li>
+<li>CSS Syntax Validations and Code Quality Report</li>
+<li>Minifies  CSS, JavaScript and HTML resources</li>
+<li>Image Optimizer </li>
+<li>Cache  Buster to invalidate  cached CSS and JavaScript files</li>
+<li>Generates JavaScript  API Documentation</li>
+<li>Added normalize.css to render HTML/HMTL5 components consistently across different browsers.</li>
+<li>Merge and compress all the JavaScript files and CSS files  into a
+single minimized file. Takes less time to download ,enable minimal
+connections to server and thereby improves overall performance and user
+experience</li>
+</ul>
+<h1>Project Directory Layout</h1>
+<p><strong>Project Root</strong><br>
+| <br>
++-------dist/<br>
+| <br>
++-------build/<br>
+| <br>
++-------test/<br>
+| <br>
++-------vendor/<br>
+| <br>
++-------readme/<br>
+| <br>
++-------src/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+---------index.html <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+---------favicon.ico <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+---------styles/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+---------images/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+---------partials/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+---------js/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---directives/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---filters/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---config/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---utils/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ --- << App specific modules >> <br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---controllers/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---services/ <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---app.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---bootstrap.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---mainConfig.js <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ ---router.js <br>
+
+</p>
+
+<h1>Usage</h1>
+<p>We have preconfigured the project with node web server. Install node.js, unzip the project and  go to the project root folder in windows command prompt and run the node command : <strong>node web-server.js</strong>
+<br>
+Launch the app in your web browser by navigating to  : <a href='http://localhost:8000/src/index.html' >http://localhost:8000/src/index.html</a>
+</p>
+
+
+
+</body></html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

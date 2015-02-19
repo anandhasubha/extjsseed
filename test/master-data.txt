@@ -1,0 +1,18 @@
+{    "empId": "2",
+    "email": "mathewf@cognizant.com",
+    "firstName": "Mathew",
+    "lastName": "Ferry",
+    "dateOfBirth": "12/25/1980",
+    "gender": "Male",
+    "department": "CI"
+}
+
+
+{    "empId": "1",
+    "email": "johna@cognizant.com",
+    "firstName": "Andrews",
+    "lastName": "John",
+    "dateOfBirth": "03/05/1970",/Users/anandhasubha/work/workspace/extjsseed/test/master-data.txt
+    "gender": "Male",
+    "department": "ASG"
+}
